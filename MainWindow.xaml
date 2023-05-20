@@ -1,0 +1,20 @@
+﻿<Window x:Class="Lab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Background="#FF7C71C8">
+        <TextBox x:Name="tbFName" Canvas.Left="169" TextWrapping="Wrap" Canvas.Top="161" Width="120" FontSize="15"/>
+        <TextBox x:Name="tbLName" Canvas.Left="169" TextWrapping="Wrap" Canvas.Top="204" Width="120" FontSize="15" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top"/>
+        <Label x:Name="lblFName" Content="First Name&#xD;&#xA;" Canvas.Left="77" Canvas.Top="154" Foreground="White" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblLName" Content="Last name&#xD;&#xA;" Canvas.Left="81" Canvas.Top="204" Foreground="White" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnSubmit" Content="Submit" Canvas.Left="150" Canvas.Top="261" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Height="52" Click="btnSubmit_Click"/>
+        <Label Content="Add User to List of Users" Canvas.Left="43" Canvas.Top="62" Foreground="White" FontSize="24" FontWeight="Bold"/>
+        <ComboBox x:Name="cbUsers" Canvas.Left="498" Canvas.Top="41" Width="215" HorizontalAlignment="Center" Height="42" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbUserInfo" Height="266" Width="293" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="443" Canvas.Top="115" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionChanged="lbUserInfo_SelectionChanged"/>
+
+    </Canvas>
+</Window>
